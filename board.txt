@@ -1,0 +1,9 @@
+
+
+b b b b b b b 
+b b b b b b b
+x b b b b b b
+o o b b b b b
+o o x b b b b 
+o x x x o b b  
+

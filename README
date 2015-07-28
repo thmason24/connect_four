@@ -1,0 +1,76 @@
+SOME BASIC INFO:
+
+----------------------------------------------------------------
+
+To compile, just run 
+
+  make
+
+
+If there are problems with compilation, run 
+
+  make clean
+  make
+
+----------------------------------------------------------------
+
+To run the code, run
+
+  ./connect4 <arguments>
+
+Arguments:
+  - no arguments: a game will be run between human and 
+    the simple AI player I included here (called "simple")
+  - 1 argument: a game will be run between human and the 
+    specified player
+  - 2 or more arguments: a tournament will be run between
+    the specified players (doesn't work for human player well)
+
+Examples:
+  - just play against the simple player
+    ./connect4
+  - play against the offensive player
+    ./connect4 offensive
+  - play against the random player
+    ./connect4 random
+  - run a tournament with all supplied players
+    ./connect4 simple offensive random better_random
+
+----------------------------------------------------------------
+
+List of supplied players:
+  - simple        (best AI)
+  - offensive     (second best AI)
+  - random        (pure random)
+  - better_random (slightly better version of random player)
+  - human         (human player)
+
+----------------------------------------------------------------
+
+The time bound is 10 seconds for now, but this can be changed
+in the main function. I have not tested the time bounds, but 
+I hope it works. 
+
+----------------------------------------------------------------
+
+To add your player, follow these instructions:
+  - create a separate source and header files for your player
+  - the name of the file should be identical with your admiral 
+    login name
+  - to ensure there is no overlap with others, use your admiral
+    login name as prefix of all your function names 
+  - feel free to use any of my functions, but if you want to 
+    ensure same functionality, you may want to create your own
+    copy and rename it, because I may update my code
+  - you can create other test players, for which you do not have
+    to follow these naming conventions, but for your official
+    player you should
+  - to allow the system to use the player in tournaments and 
+    games, you must add it into the list of players in 
+    get_player.cc (should be self explanatory)
+
+----------------------------------------------------------------
+
+WARNING: I spent lot of time testing the code, but there still
+might be mistakes, so please report to me if you identify some
+bugs in the code. 
